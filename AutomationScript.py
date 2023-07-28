@@ -484,7 +484,7 @@ try:
     chrome_version = "115.0.5790.102"  # Replace this with the version you want to use
     driver = webdriver.Chrome(executable_path=ChromeDriverManager(chrome_type='google-chrome', version=chrome_version).install(), options=options)
 except Exception as e:
-    # If the current Chrome version is not available in the link above, use this
+    # If the current Chrome version is not available in the link above, use this (NOTE: YOU MUST HAVE A CHROMEDRIVER.EXE IN THE SAME DIRECTORY WHERE YOUR SCRIPT IS SAVED)
     print("Chrome version not available. Using chromedriver.exe instead.")
     chromedriver_path = os.path.join(os.getcwd(), "chromedriver.exe")
     driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
@@ -497,10 +497,8 @@ login_page = LoginPage(driver)
 login_page.navigate()
 
 # Input email and password
-#login_page.input_email("jerwin.peralta@outlook.com")
-#login_page.input_password("Rakknaitu3!")
-login_page.input_email("carmellajoy.guelas+qasuperadmin@eg-software.com")
-login_page.input_password("EgsCm2020!")
+login_page.input_email("inputyourusernamehere")
+login_page.input_password("inputyourpasswordhere")
 
 
 # click login button
