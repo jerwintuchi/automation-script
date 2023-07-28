@@ -54,7 +54,7 @@ class MainPage:
 
     def Home(self):
         # Go to the home page/ Main Dashboard
-        self.driver.get('https://appasiaqa.calcmenu.com/Home/Dashboard')
+        self.driver.get('URL OF HOME') #Applicable if you want to access directly the main/home of the webpage then provide additional methods if ever
 
     def navigate(self):
         # navigate to the main page after login
