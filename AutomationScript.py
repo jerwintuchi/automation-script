@@ -219,7 +219,7 @@ class MainPage:
         except Exception as e:
             print("Error occurred while retrieving text:", e)
             return None
-        4
+        
 
     def wine_pairing_automation(self):
         # Wine Pairing Automation
