@@ -29,7 +29,7 @@ class LoginPage:
     
     # LOGIN
     def navigate(self):
-        self.driver.get('https://appasiaqa.calcmenu.com/Welcome/Signin')
+        self.driver.get('PROVIDE URL THAT YOU WANT TO VISIT')
 
     def input_email(self, email):
         # wait for the email input element to be visible
